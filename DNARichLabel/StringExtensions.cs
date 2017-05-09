@@ -1,7 +1,6 @@
-﻿namespace RichLabel.iOS
+﻿namespace DNARichLabel
 {
 	using System.Text.RegularExpressions;
-	using Foundation;
 
 	public static class StringExtensions
 	{

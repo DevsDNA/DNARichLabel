@@ -1,7 +1,6 @@
-﻿namespace RichLabel.iOS
+﻿namespace DNARichLabel
 {
     using System;
-    using Foundation;
 
     public class RichLabelEventArgs : EventArgs
     {

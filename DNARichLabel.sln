@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNARichLabel", "DNARichLabel\DNARichLabel.csproj", "{CEC9EF9D-9025-4685-83B9-116758F95B06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNARichLabel", "DNARichLabel\DNARichLabel.csproj", "{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNARichLabel.Sample", "DNARichLabel.Sample\DNARichLabel.Sample.csproj", "{CEC9EF9D-9025-4685-83B9-116758F95B06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,14 @@ Global
 		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Release|iPhone.Build.0 = Release|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Release|iPhone.ActiveCfg = Release|iPhone

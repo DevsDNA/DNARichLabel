@@ -1,4 +1,4 @@
-namespace RichLabel.iOS
+namespace DNARichLabel
 {
     using UIKit;
     using Foundation;
@@ -139,7 +139,7 @@ namespace RichLabel.iOS
             set { _ignoredKeywords = value; }
         }
 
-		public void SetUp(nfloat lineHeightMultiple, bool userInteractionEnabled, bool automaticLinkDetectionEnabled, RichLabelLinkTypeOption linkDetectionTypes)
+		public void SetUp(float lineHeightMultiple = 1.0f, bool userInteractionEnabled = true, bool automaticLinkDetectionEnabled = true, RichLabelLinkTypeOption linkDetectionTypes = RichLabelLinkTypeOption.All)
 		{
 			_lineHeightMultiple = lineHeightMultiple;
 			_automaticLinkDetectionEnabled = automaticLinkDetectionEnabled;
@@ -196,7 +196,7 @@ namespace RichLabel.iOS
 				switch (linkType)
 				{
 					case RichLabelLinkType.Action:
-						linkAttributes.ForegroundColor = UIColor.FromRGB(144, 164, 174);
+						linkAttributes.ForegroundColor = UIColor.FromRGB(0, 120, 215);
 						break;
 					case RichLabelLinkType.Hashtag:
 						linkAttributes.ForegroundColor = UIColor.FromRGB(0, 120, 215);
@@ -727,7 +727,8 @@ namespace RichLabel.iOS
             
             RichLabelRange touchedLink = LinkAtPoint(GetTouchLocation(touches));
 
-			if (touchedLink != null && touchedLink.LinkType != RichLabelLinkType.Action)
+			//if (touchedLink != null && touchedLink.LinkType != RichLabelLinkType.Action)
+			if (touchedLink != null)
             {
                 Delegate?.OnRichLabelRangeTapped(new RichLabelEventArgs(touchedLink));
             }

@@ -1,12 +1,11 @@
-﻿using System;
-
-using UIKit;
-
-namespace DNARichLabel
+﻿namespace DNARichLabel
 {
+	using System;
+	using UIKit;
+
 	public partial class DataViewController : UIViewController
 	{
-		public string DataObject
+		public Tuple<RichLabelLinkTypeOption, string> DataObject
 		{
 			get; set;
 		}
@@ -15,6 +14,8 @@ namespace DNARichLabel
 		{
 			// Note: this .ctor should not contain any initialization logic.
 		}
+
+		public IRichLabelDelegate RichLabelDelegate { get; set; }
 
 		public override void ViewDidLoad()
 		{
@@ -31,7 +32,13 @@ namespace DNARichLabel
 		public override void ViewWillAppear(bool animated)
 		{
 			base.ViewWillAppear(animated);
-			dataLabel.Text = DataObject;
+
+			richLabel.SetUp(linkDetectionTypes: DataObject.Item1);
+
+			if (RichLabelDelegate != null)
+				richLabel.Delegate = RichLabelDelegate;
+
+			richLabel.Text = DataObject.Item2;
 		}
 	}
 }

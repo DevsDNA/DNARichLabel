@@ -1,21 +1,25 @@
-﻿using Foundation;
+// WARNING
+//
+// This file has been generated automatically by Xamarin Studio to store outlets and
+// actions made in the UI designer. If it is removed, they will be lost.
+// Manual changes to this file may not be handled correctly.
+//
+using Foundation;
 using System.CodeDom.Compiler;
 
 namespace DNARichLabel
 {
-	[Register("DataViewController")]
+	[Register ("DataViewController")]
 	partial class DataViewController
 	{
 		[Outlet]
-		[GeneratedCodeAttribute("iOS Designer", "1.0")]
-		UIKit.UILabel dataLabel { get; set; }
-
-		void ReleaseDesignerOutlets()
+		DNARichLabel.RichLabel richLabel { get; set; }
+		
+		void ReleaseDesignerOutlets ()
 		{
-			if (dataLabel != null)
-			{
-				dataLabel.Dispose();
-				dataLabel = null;
+			if (richLabel != null) {
+				richLabel.Dispose ();
+				richLabel = null;
 			}
 		}
 	}

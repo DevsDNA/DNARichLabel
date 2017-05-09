@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace RichLabel.iOS
+namespace DNARichLabel
 {
     using Foundation;
     using UIKit;

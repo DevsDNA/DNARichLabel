@@ -1,4 +1,4 @@
-﻿namespace RichLabel.iOS
+﻿namespace DNARichLabel
 {
     public interface IRichLabelDelegate
     {

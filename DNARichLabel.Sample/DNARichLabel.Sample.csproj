@@ -6,7 +6,7 @@
     <ProjectGuid>{CEC9EF9D-9025-4685-83B9-116758F95B06}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DNARichLabel</RootNamespace>
+    <RootNamespace>DNARichLabel.Sample</RootNamespace>
     <AssemblyName>DNARichLabel</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
@@ -29,6 +29,8 @@
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <AssemblyName>DNARichLabelSample</AssemblyName>
+    <MtouchExtraArgs></MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -57,6 +59,7 @@
     <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <AssemblyName>DNARichLabelSample</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -112,6 +115,12 @@
       <DependentUpon>DataViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DNARichLabel\DNARichLabel.csproj">
+      <Project>{9EAEE46D-0487-4DD1-BF67-37BF09AA6723}</Project>
+      <Name>DNARichLabel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
