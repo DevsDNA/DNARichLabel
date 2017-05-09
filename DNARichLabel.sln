@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNARichLabel", "DNARichLabel\DNARichLabel.csproj", "{CEC9EF9D-9025-4685-83B9-116758F95B06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Release|iPhone.ActiveCfg = Release|iPhone
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Release|iPhone.Build.0 = Release|iPhone
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{CEC9EF9D-9025-4685-83B9-116758F95B06}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
